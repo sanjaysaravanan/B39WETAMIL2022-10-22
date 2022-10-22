@@ -104,7 +104,7 @@ const obj = {
 // userDetails
 // techstacks
 
-// parallel
+// promise all --> parallel call
 const namePromise = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log('resolved Name Promise');

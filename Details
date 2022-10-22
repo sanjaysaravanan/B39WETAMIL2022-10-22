@@ -1,0 +1,69 @@
+Callback
+  
+  use & purpose of the callback
+
+  callback advantages:
+    1. Modularity / Reusability
+    2. To keep track when to execute what statements as a callback in a asynchronous operation
+
+    asynchronous operation always go for named callback function to keep track
+
+    best practice to use name callback asynchronous operation
+
+  pain of callback
+    Callback Hell: Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code
+
+  Best pratice to keep the callback recursion at one level (single function as arguemnt which is not dependent one function as callback)
+
+  Recursion: function calling itself
+  termination condition is so important else it will crash the system
+
+Promise:
+
+  Object to understand the completion (or failed) of an asynchronous event/operation
+
+  State:
+
+    pending --->  initial state, neither fulfilled nor rejected.
+
+    fullfilled ---> meaning that the operation was completed successfully.
+
+    rejected ---> meaning that the operation failed.
+
+    methods:
+      then ---> executed when the promise is fullfilled/resolved
+      catch ---> executed when the promise is rejected/unfullfilled
+
+  Chaining
+    chaining of promise(return of promise) at the end a resolvement
+    chaining of promise make one promise depend on it parent promise
+    amount of time is cumulative/adding up
+
+  All:
+    simultaneous triggering for multiple promise object.
+    which will resolve only when all the promise are resolved.
+    will rejected if one or more promises are rejected
+
+
+
+  try & catch
+
+  Go thorugh online about below,
+    API ---> Application Programming Interface
+
+      APIs are the communication between services( backend, front-end, payment, ... ) can be using JSON etc...
+
+      State of an application using APIs ---> REST APIs --> representational state transfer
+
+
+Next Session:
+Fetch & then
+
+  Fetch -> Interface to make an api call
+    then ---> response --> convert response to json -> promsie .then (json -> operation on json)
+  
+  CRUD --> 
+    Read => Fetch
+    Create => Fetch with Method POST
+    Update => Fetch with Method PUT
+    Delete => Fetch with Method DELETE

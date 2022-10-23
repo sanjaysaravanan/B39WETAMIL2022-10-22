@@ -5,6 +5,8 @@ Callback
   callback advantages:
     1. Modularity / Reusability
     2. To keep track when to execute what statements as a callback in a asynchronous operation
+    
+    Javascript is a single threaded
 
     asynchronous operation always go for named callback function to keep track
 
